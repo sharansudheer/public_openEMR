@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPatientDashboard">
+
+    <TableLayout
+        android:id="@+id/button_table"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#ffffff"
+        android:padding="16dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/goto_appointments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/appointments"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/goto_billing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/billing"
+                style="?android:attr/buttonBarButtonStyle" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/goto_prescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/prescription"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/goto_allergies"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/allergies"
+                style="?android:attr/buttonBarButtonStyle" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/goto_summary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/appointment_summary"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_6"
+                style="?android:attr/buttonBarButtonStyle" />
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
