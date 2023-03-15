@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void openNewActivity(String username,String password) {
         OkHttpClient client = new OkHttpClient();
-        String url = "https://mobileapp.trackdemon.in/oauth2/default/token";
+        String url = "oauth2/default/token";
         String grantType = "password";
         String clientId = "FTHOrCUow4SvwKhkPe7jRlLUzygTcSyzYOyUV9DTZEQ";
         String userRole = "users";
@@ -83,14 +83,14 @@ public class LoginActivity extends AppCompatActivity {
 
 
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl("https://mobileapp.trackdemon.in/")
+                .baseUrl("")
                 .addConverterFactory(GsonConverterFactory.create());
                  // Set the custom OkHttpClient instance
         Retrofit retrofit = builder.build();
         ApiService apiService = retrofit.create(ApiService.class);
         Call<AuthResponse> call = apiService.authenticateUser(
                 "password",
-                "FTHOrCUow4SvwKhkPe7jRlLUzygTcSyzYOyUV9DTZEQ",
+                "",
                 scope,
                 "users",
                 username,
